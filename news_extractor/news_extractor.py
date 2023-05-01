@@ -95,12 +95,11 @@ def news_agg(rss):
 
 # List of RSS feeds
 rss = ['https://www.economictimes.indiatimes.com/rssfeedstopstories.cms',
-       'http://feeds.feedburner.com/ndtvprofit-latest?format=xml',
-       'https://www.thehindubusinessline.com/news/feeder/default.rss',
+       
+       
        'https://www.moneycontrol.com/rss/latestnews.xml',
        'https://www.livemint.com/rss/news',
-       'https://www.business-standard.com/rss/latest.rss',
-       'https://www.businesstoday.in/rssfeeds/?id=225346',
+       
        'https://www.zeebiz.com/latest.xml/feed',
        'https://www.timesofindia.indiatimes.com/rssfeedmostrecent.cms']
 
