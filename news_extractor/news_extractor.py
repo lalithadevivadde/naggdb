@@ -43,7 +43,7 @@ def rss_parser(i):
     desc = "" if b1.find("description") is None else b1.find("description").get_text()
     desc = text_clean(desc)
     desc = f'{desc[:300]}...' if len(desc) >= 300 else desc
-    date = "Sat, 12 Aug 2000 13:39:15 +0530" if b1.find("pubDate") is None else b1.find("pubDate").get_text()
+    date = "Sat, 12 Aug 2000 13:39:15 +0530" if ((b1.find("pubDate") is "") or (b1.find("pubDate") is None)) else b1.find("pubDate").get_text()
     if url.find("businesstoday.in") >= 0:
         date = date.replace("GMT", "+0530")
     date1 = parser.parse(date)
